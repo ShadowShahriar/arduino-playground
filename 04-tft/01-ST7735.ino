@@ -6,7 +6,7 @@
 // === 1.8 Inch TFT 128×160 ===
 /* === SPI ===
  * TFT        ESP32
- * LED    --> 3V3
+ * LED    --> GPIO 5
  * SCK    --> GPIO 18
  * SDA    --> GPIO 23
  * A0(DC) --> GPIO 2
@@ -18,10 +18,12 @@
 
 #define LANDSCAPE false
 #define FLIP true
-#define TFT_DC 2   // === data/command pin ===
-#define TFT_RST 4  // === reset pin ===
-#define TFT_CS 15  // === chip select pin ===
-#define TFT_MS 250 // === delay before initializing the display ===
+#define BRIGHTNESS 255 // === [0, 255] ===
+#define TFT_BL 5	   // === backlight pin ===
+#define TFT_DC 2	   // === data/command pin ===
+#define TFT_RST 4	   // === reset pin ===
+#define TFT_CS 15	   // === chip select pin ===
+#define TFT_MS 250	   // === delay before initializing the display ===
 Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
 
 void background(uint16_t color)
@@ -39,8 +41,26 @@ void clearDisplay()
 	tft.fillScreen(ST77XX_BLACK);
 }
 
+void backlight(int brightness)
+{
+	int val = constrain(brightness, 0, 255);
+	analogWrite(TFT_BL, val);
+}
+
+void backlightOff()
+{
+	digitalWrite(TFT_BL, 0);
+}
+
+void backlightOn()
+{
+	backlight(BRIGHTNESS);
+}
+
 void setupTFT()
 {
+	pinMode(TFT_BL, OUTPUT);
+	backlight(BRIGHTNESS);
 	delay(TFT_MS);
 	tft.initR(INITR_BLACKTAB);
 
