@@ -10,6 +10,6 @@
 		"**/*.exe": true,
 		"**/.gitignore": true,
 		"**/desktop.ini": true,
-		".old": true
+		".old": false
 	}
 }
