@@ -2,7 +2,7 @@
  * =======================================
  * === Built-in LEDs in Arduino boards ===
  * =======================================
- * Nano/Leonardo/Xiao/Mini Mega - 13 (LED_BUILTIN)
+ * Nano/Leonardo/Xiao SAMD21/Mini Mega - 13 (LED_BUILTIN)
  * Micro/Pro Micro - 17 (LED_BUILTIN_RX), 30 (LED_BUILTIN_TX)
  */
 #define LED_PIN 13

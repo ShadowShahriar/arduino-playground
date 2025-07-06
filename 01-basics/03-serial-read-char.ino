@@ -2,7 +2,7 @@ void setup()
 {
 	unsigned long baud = 9600; // 115200
 	Serial.begin(baud);
-	Serial.println("✅ Serial communication OK");
+	Serial.println(F("✅ Serial communication OK"));
 }
 
 void loop()
