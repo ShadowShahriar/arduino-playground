@@ -16,11 +16,11 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 
 | OLED&nbsp;Module | Arduino&nbsp;Nano | Arduino&nbsp;Mega | ESP32             |
 | :--------------- | :---------------- | :---------------- | :---------------- |
-| **SDA**          | A4                | GPIO 20           | GPIO 21           |
-| **SCL**          | A5                | GPIO 21           | GPIO 22           |
+| **SDA**          | A4                | GPIO&nbsp;20      | GPIO&nbsp;21      |
+| **SCL**          | A5                | GPIO&nbsp;21      | GPIO&nbsp;22      |
 | **GND**          | GND               | GND               | GND               |
 | **VCC**          | 5V                | 5V                | 5V                |
-| **RES**\*        | GPIO 7            | GPIO 7            | **GPIO&nbsp;5**\* |
+| **RES**\*        | GPIO&nbsp;7       | GPIO&nbsp;7       | **GPIO&nbsp;5**\* |
 
 <!-- prettier-ignore-start -->
 > [!NOTE]
