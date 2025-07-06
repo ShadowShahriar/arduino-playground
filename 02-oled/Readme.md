@@ -31,6 +31,15 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 -   [📌 **Simulation with an Arduino Mega**](https://wokwi.com/projects/423532660172523521)
 -   [📌 **Simulation with an ESP32 Dev Module**](https://wokwi.com/projects/424335911358345217)
 
+## Physical Dimensions
+
+| Module                          | OLED Display&nbsp;(W&nbsp;×&nbsp;L&nbsp;×&nbsp;B) | Breakout&nbsp;Board&nbsp;(W&nbsp;×&nbsp;L&nbsp;×&nbsp;B) |
+| :------------------------------ | :------------------------------------------------ | -------------------------------------------------------- |
+| **0.96"&nbsp;OLED&nbsp;module** | 24.6 × 16.4 × 1.6 mm                              | 24.6 × 26.9 × 2.8 mm                                     |
+| **1.3"&nbsp;OLED&nbsp;module**  | 34.5 × 22.9 × 1.8 mm                              | 34.5 × 32.1 × 4.2 mm                                     |
+| **1.5"&nbsp;OLED&nbsp;module**  | 33.6 × 36.6 × 1.4 mm                              | 44.7 × 36.9 × 8.8 mm                                     |
+| **2.42"&nbsp;OLED&nbsp;module** | 61.6 × 38.0 × 4.0 mm                              | 72.1 × 42.8 × 5.0 mm                                     |
+
 ## 0.96 inch OLED module
 
 [📄 **01-SSD1306.ino**](./01-SSD1306.ino)
