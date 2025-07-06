@@ -11,6 +11,8 @@ This section provides sample code for basic operations such as **serial communic
 
 Blinking the **built-in LED** on the Arduino boards.
 
+[📌 **Simulation**](https://wokwi.com/projects/423438680888402945)
+
 | Board                                                                                                             | Built-in LED Pin | Alias                              |
 | :---------------------------------------------------------------------------------------------------------------- | :--------------- | :--------------------------------- |
 | Arduino&nbsp;Uno<br>Arduino&nbsp;Nano<br>Arduino&nbsp;Leonardo<br>Arduino&nbsp;Mini&nbsp;Mega<br>Xiao&nbsp;SAMD21 | **13**           | `LED_BUILTIN`                      |
