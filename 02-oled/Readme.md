@@ -14,13 +14,13 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 
 ## Wiring Diagram
 
-| OLED Module | Arduino Nano | Arduino Mega | ESP32        |
-| :---------- | :----------- | :----------- | :----------- |
-| **SDA**     | A4           | GPIO 20      | GPIO 21      |
-| **SCL**     | A5           | GPIO 21      | GPIO 22      |
-| **GND**     | GND          | GND          | GND          |
-| **VCC**     | 5V           | 5V           | 5V           |
-| **RES**\*   | GPIO 7       | GPIO 7       | **GPIO 5**\* |
+| OLED&nbsp;Module | Arduino&nbsp;Nano | Arduino&nbsp;Mega | ESP32             |
+| :--------------- | :---------------- | :---------------- | :---------------- |
+| **SDA**          | A4                | GPIO 20           | GPIO 21           |
+| **SCL**          | A5                | GPIO 21           | GPIO 22           |
+| **GND**          | GND               | GND               | GND               |
+| **VCC**          | 5V                | 5V                | 5V                |
+| **RES**\*        | GPIO 7            | GPIO 7            | **GPIO&nbsp;5**\* |
 
 <!-- prettier-ignore-start -->
 > [!NOTE]
@@ -33,12 +33,12 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 
 ## Physical Dimensions
 
-| Module                          | OLED Display&nbsp;(W&nbsp;×&nbsp;L&nbsp;×&nbsp;B) | Breakout&nbsp;Board&nbsp;(W&nbsp;×&nbsp;L&nbsp;×&nbsp;B) |
-| :------------------------------ | :------------------------------------------------ | -------------------------------------------------------- |
-| **0.96"&nbsp;OLED&nbsp;module** | 24.6 × 16.4 × 1.6 mm                              | 24.6 × 26.9 × 2.8 mm                                     |
-| **1.3"&nbsp;OLED&nbsp;module**  | 34.5 × 22.9 × 1.8 mm                              | 34.5 × 32.1 × 4.2 mm                                     |
-| **1.5"&nbsp;OLED&nbsp;module**  | 33.6 × 36.6 × 1.4 mm                              | 44.7 × 36.9 × 8.8 mm                                     |
-| **2.42"&nbsp;OLED&nbsp;module** | 61.6 × 38.0 × 4.0 mm                              | 72.1 × 42.8 × 5.0 mm                                     |
+| Module                          | OLED&nbsp;Display&nbsp;(W&nbsp;×&nbsp;L&nbsp;×&nbsp;B) | Breakout&nbsp;Board&nbsp;(W&nbsp;×&nbsp;L&nbsp;×&nbsp;B) |
+| :------------------------------ | :----------------------------------------------------- | -------------------------------------------------------- |
+| **0.96"&nbsp;OLED&nbsp;module** | 24.6 × 16.4 × 1.6 mm                                   | 24.6 × 26.9 × 2.8 mm                                     |
+| **1.3"&nbsp;OLED&nbsp;module**  | 34.5 × 22.9 × 1.8 mm                                   | 34.5 × 32.1 × 4.2 mm                                     |
+| **1.5"&nbsp;OLED&nbsp;module**  | 33.6 × 36.6 × 1.4 mm                                   | 44.7 × 36.9 × 8.8 mm                                     |
+| **2.42"&nbsp;OLED&nbsp;module** | 61.6 × 38.0 × 4.0 mm                                   | 72.1 × 42.8 × 5.0 mm                                     |
 
 ## 0.96 inch OLED module
 
