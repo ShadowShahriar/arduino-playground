@@ -13,6 +13,8 @@ Blinking the **built-in LED** on the Arduino boards.
 
 [📌 **Simulation**](https://wokwi.com/projects/423438680888402945)
 
+[📄 **01-blink.ino**](./01-blink.ino)
+
 | Board                                                                                                             | Built-in LED Pin | Alias                              |
 | :---------------------------------------------------------------------------------------------------------------- | :--------------- | :--------------------------------- |
 | Arduino&nbsp;Uno<br>Arduino&nbsp;Nano<br>Arduino&nbsp;Leonardo<br>Arduino&nbsp;Mini&nbsp;Mega<br>Xiao&nbsp;SAMD21 | **13**           | `LED_BUILTIN`                      |
@@ -41,6 +43,8 @@ void loop()
 
 Printing **Hello World** in the Serial Monitor with a baud rate of `9600`.
 
+[📄 **02-serial-output.ino**](./02-serial-output.ino)
+
 > [!NOTE]
 > Baud rate refers to the number of signal changes that occur per second in a communication channel. It is a measure of the signaling speed in a digital communication system. Most commonly used baud rates `9600` and `115200`.
 
@@ -62,6 +66,8 @@ void loop()
 ## Read a character from the Serial Monitor
 
 The Arduino IDE includes a text field above its serial monitor, where we can read the single character that has been typed. This character is received in its ASCII representation, so we need to typecast it to a `char` in order to display it in the Serial Monitor.
+
+[📄 **03-serial-read-char.ino**](./03-serial-read-char.ino)
 
 ```CPP
 void setup()
@@ -85,6 +91,8 @@ void loop()
 ## Wait for Serial connectivity
 
 In certain situations, the serial monitor does not start immediately when the Arduino board is plugged in. As a result, some of the serial output may be lost. To address this, we print **10** new lines with a delay of **100 ms** before displaying any useful information.
+
+[📄 **04-serial-setup.ino**](./04-serial-setup.ino)
 
 ```CPP
 void setupSerial()
