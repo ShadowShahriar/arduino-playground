@@ -21,17 +21,17 @@ Blinking the **built-in LED** on the Arduino boards.
 
 void setup()
 {
-	pinMode(LED_PIN, OUTPUT);
-	digitalWrite(LED_PIN, LOW);
+  pinMode(LED_PIN, OUTPUT);
+  digitalWrite(LED_PIN, LOW);
 }
 
 void loop()
 {
-	digitalWrite(LED_PIN, HIGH);
-	delay(2000);
+  digitalWrite(LED_PIN, HIGH);
+  delay(2000);
 
-	digitalWrite(LED_PIN, LOW);
-	delay(1000);
+  digitalWrite(LED_PIN, LOW);
+  delay(1000);
 }
 ```
 
@@ -45,15 +45,15 @@ Printing **Hello World** in the Serial Monitor with a baud rate of `9600`.
 ```CPP
 void setup()
 {
-	unsigned long baud = 9600;
-	Serial.begin(baud);
-	Serial.println(F("✅ Serial communication OK"));
+  unsigned long baud = 9600;
+  Serial.begin(baud);
+  Serial.println(F("✅ Serial communication OK"));
 }
 
 void loop()
 {
-	delay(1000);
-	Serial.println(F("Hello World"));
+  delay(1000);
+  Serial.println(F("Hello World"));
 }
 ```
 
@@ -64,19 +64,19 @@ The Arduino IDE includes a text field above its serial monitor, where we can rea
 ```CPP
 void setup()
 {
-	unsigned long baud = 9600; // 115200
-	Serial.begin(baud);
-	Serial.println(F("✅ Serial communication OK"));
+  unsigned long baud = 9600; // 115200
+  Serial.begin(baud);
+  Serial.println(F("✅ Serial communication OK"));
 }
 
 void loop()
 {
-	if (Serial.available() > 0)
-	{
-		int data = Serial.read();
-		if (data != 10 && data != 13)
-			Serial.println((char)data);
-	}
+  if (Serial.available() > 0)
+  {
+    int data = Serial.read();
+    if (data != 10 && data != 13)
+      Serial.println((char)data);
+  }
 }
 ```
 
@@ -87,23 +87,23 @@ In certain situations, the serial monitor does not start immediately when the Ar
 ```CPP
 void setupSerial()
 {
-	Serial.begin(9600);
-	for (int i = 0; i < 10; i++)
-	{
-		delay(100);
-		Serial.println(F("."));
-	}
-	Serial.println(F("✅ Serial OK"));
+  Serial.begin(9600);
+  for (int i = 0; i < 10; i++)
+  {
+    delay(100);
+    Serial.println(F("."));
+  }
+  Serial.println(F("✅ Serial OK"));
 }
 
 void setup()
 {
-	setupSerial();
+  setupSerial();
 }
 
 void loop()
 {
-	delay(1000);
-	Serial.println(F("Hello World"));
+  delay(1000);
+  Serial.println(F("Hello World"));
 }
 ```
