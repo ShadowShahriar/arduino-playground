@@ -4,6 +4,15 @@
 #include <Fonts/Org_01.h>
 #include <Adafruit_SH110X.h>
 
+// === 1.3 Inch OLED 128×64 ===
+/* === I2C ===
+ * OLED      Arduino Nano
+ * SDA   --> A4
+ * SCL   --> A5
+ * VCC   --> 5V
+ * GND   --> GND
+ */
+
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
 #define SCREEN_DELAY 250
@@ -23,7 +32,7 @@ void setupOLED()
 	clearDisplay();
 }
 
-void displayAffirmation()
+void demo()
 {
 	display.clearDisplay();
 	display.setTextColor(1);
@@ -41,7 +50,7 @@ void setup()
 {
 	Serial.begin(9600);
 	setupOLED();
-	displayAffirmation();
+	demo();
 }
 
 void loop()
