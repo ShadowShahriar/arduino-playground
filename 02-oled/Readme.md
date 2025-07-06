@@ -44,6 +44,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 
 [📄 **01-SSD1306.ino**](./01-SSD1306.ino)
 
+<img src="../images/oled-0.96inch.jpg" alt="0.96 inch OLED module" width="500"/>
+
 | Feature              |                                      |
 | :------------------- | :----------------------------------- |
 | **Driver IC**        | SSD1306                              |
@@ -57,6 +59,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 ## 1.3 inch OLED module
 
 [📄 **02-SH1106.ino**](./02-SH1106.ino)
+
+<img src="../images/oled-1.3inch.jpg" alt="1.3 inch OLED module" width="500"/>
 
 | Feature              |                                     |
 | :------------------- | :---------------------------------- |
@@ -72,6 +76,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 
 📄 **04-SSD1327.ino**
 
+<img src="../images/oled-1.5inch.jpg" alt="1.5 inch OLED module" width="500"/>
+
 | Feature              |                                        |
 | :------------------- | :------------------------------------- |
 | **Driver IC**        | SSD1327                                |
@@ -85,6 +91,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 ## 2.42 inch OLED module
 
 [📄 **03-SSD1309.ino**](./01-SSD1309.ino)
+
+<img src="../images/oled-2.42inch.jpg" alt="2.42 inch OLED module" width="500"/>
 
 | Feature              |                                      |
 | :------------------- | :----------------------------------- |
