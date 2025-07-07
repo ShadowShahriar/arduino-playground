@@ -61,6 +61,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 
 ### Wiring Diagram (ESP32)
 
+![Wiring diagram for ESP32](../images/tft-2.8-inch-wiring-diagram-esp32.jpg)
+
 | 2.8"&nbsp;TFT | ESP32&nbsp;Dev&nbsp;Module | Remarks                          |
 | :------------ | :------------------------- | :------------------------------- |
 | SDO (MISO)    | GPIO 19                    | Serial&nbsp;Data&nbsp;Out        |
@@ -74,6 +76,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 | VCC           | **3V3**                    | **Do&nbsp;NOT&nbsp;use&nbsp;5V** |
 
 ### Wiring Diagram (Arduino)
+
+![Wiring diagram for Arduino Nano](../images/tft-2.8-inch-wiring-diagram-nano.jpg)
 
 > [!CAUTION]
 > The TFT display module operates at a logic level of **3.3V**, while the Arduino Nano functions at a **5V** logic level. To ensure compatibility, we need to add a **voltage divider for all signal wires** to shift the logic level from **5V** to **3.3V**.
@@ -142,6 +146,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 
 ### Wiring Diagram (ESP32)
 
+![Wiring diagram for ESP32](../images/tft-2.8-inch-wiring-diagram-esp32.jpg)
+
 > [!CAUTION]
 > In order to make this TFT display work, we have to edit the `User_Setup.h` header file provided in the **tft_eSPI** library folder. Locate the file in your Arduino libaries folder and replace its contents with the following:
 >
@@ -185,6 +191,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 | VCC           | **3V3**                    | **Do&nbsp;NOT&nbsp;use&nbsp;5V** |
 
 ### Wiring Diagram (Arduino)
+
+![Wiring diagram for Arduino Nano](../images/tft-2.8-inch-wiring-diagram-nano.jpg)
 
 > [!CAUTION]
 > The TFT display module operates at a logic level of **3.3V**, while the Arduino Nano functions at a **5V** logic level. To ensure compatibility, we need to add a **voltage divider for all signal wires** to shift the logic level from **5V** to **3.3V**.
