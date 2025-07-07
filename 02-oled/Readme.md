@@ -14,6 +14,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 
 ## Wiring Diagram
 
+<p align="center"><img src="../images/oled-wiring-diagram.jpg" alt="General wiring diagram for OLED modules"/></p>
+
 | OLED&nbsp;Module | Arduino&nbsp;Nano | Arduino&nbsp;Mega | ESP32             |
 | :--------------- | :---------------- | :---------------- | :---------------- |
 | **SDA**          | A4                | GPIO&nbsp;20      | GPIO&nbsp;21      |
