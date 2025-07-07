@@ -100,12 +100,12 @@ void demo()
 	tft.setTextSize(5);
 	tft.setFont(&Org_01);
 	tft.setCursor(40, 180);
-	tft.print("GREAT!");
+	tft.print(F("GREAT!"));
 
 	tft.setTextColor(rgb(255, 0, 0));
 	tft.setTextSize(5);
 	tft.setCursor(15, 139);
-	tft.print("YOU ARE");
+	tft.print(F("YOU ARE"));
 }
 
 void setup()

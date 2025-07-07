@@ -100,12 +100,12 @@ void demo()
 	tft.setTextSize(2);
 	tft.setFont(&Org_01);
 	tft.setCursor(21, 40);
-	tft.print("YOU ARE");
+	tft.print(F("YOU ARE"));
 
 	tft.setTextColor(rgb(255, 0, 255));
 	tft.setTextSize(3);
 	tft.setCursor(16, 60);
-	tft.print("GREAT!");
+	tft.print(F("GREAT!"));
 
 	tft.drawBitmap(35, 94, ICON_SMILE, 58, 28, rgb(0, 255, 0));
 }
