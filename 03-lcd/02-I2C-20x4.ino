@@ -1,6 +1,15 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
+// === 20x4 LCD Module ===
+/* === I2C ===
+ * OLED      Arduino Nano
+ * SDA   --> A4
+ * SCL   --> A5
+ * VCC   --> 5V
+ * GND   --> GND
+ */
+
 #define LCD_ADDRESS 0x27 // 0x3F
 #define LCD_COLUMNS 20
 #define LCD_ROWS 4
