@@ -61,9 +61,7 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 > [!NOTE]
 > This TFT display module requires the [**Adafruit ST7735 and ST7789**](https://github.com/adafruit/Adafruit-ST7735-Library) library.
 
-[📄 **03-ST7789.ino** (for ESP32)](./03-ST7789.ino)
-
-[📄 **03-ST7789-nano.ino** (for Arduino Nano)](./03-ST7789-nano.ino)
+[📄 **03-ST7789.ino** (for ESP32 and Arduino Nano)](./03-ST7789.ino)
 
 [📌 **Purchase Link (RoboticsBD)**](https://store.roboticsbd.com/display/2465-tft-lcd-28-240320-rgb-spi-display-with-touchscreen-robotics-bangladesh.html)
 
