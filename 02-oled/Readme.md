@@ -92,7 +92,7 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 
 ## 2.42 inch OLED module
 
-[📄 **03-SSD1309.ino**](./01-SSD1309.ino)
+[📄 **03-SSD1309.ino**](./03-SSD1309.ino)
 
 <img src="../images/oled-2.42inch.jpg" alt="2.42 inch OLED module" width="500"/>
 
