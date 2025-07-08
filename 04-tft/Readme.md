@@ -67,17 +67,17 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 
 ![Wiring diagram for ESP32](../images/tft-2.8-inch-wiring-diagram-esp32.jpg)
 
-| 2.8"&nbsp;TFT | ESP32&nbsp;Dev&nbsp;Module | Remarks                          |
-| :------------ | :------------------------- | :------------------------------- |
-| SDO (MISO)    | GPIO 19                    | Serial&nbsp;Data&nbsp;Out        |
-| LED           | GPIO 5                     | Backlight                        |
-| SCK           | GPIO 18                    | Serial&nbsp;Clock                |
-| SDI (MOSI)    | GPIO 23                    | Serial&nbsp;Data&nbsp;In         |
-| DC            | GPIO 2                     | Data&nbsp;Control                |
-| RESET         | GPIO 4                     | Reset                            |
-| CS            | GPIO 15                    | Chip&nbsp;Select                 |
-| GND           | GND                        | Ground                           |
-| VCC           | **3V3**                    | **Do&nbsp;NOT&nbsp;use&nbsp;5V** |
+| 2.8"&nbsp;TFT   | ESP32&nbsp;Dev&nbsp;Module | Remarks                          |
+| :-------------- | :------------------------- | :------------------------------- |
+| SDO&nbsp;(MISO) | GPIO 19                    | Serial&nbsp;Data&nbsp;Out        |
+| LED             | GPIO 5                     | Backlight                        |
+| SCK             | GPIO 18                    | Serial&nbsp;Clock                |
+| SDI&nbsp;(MOSI) | GPIO 23                    | Serial&nbsp;Data&nbsp;In         |
+| DC              | GPIO 2                     | Data&nbsp;Control                |
+| RESET           | GPIO 4                     | Reset                            |
+| CS              | GPIO 15                    | Chip&nbsp;Select                 |
+| GND             | GND                        | Ground                           |
+| VCC             | **3V3**                    | **Do&nbsp;NOT&nbsp;use&nbsp;5V** |
 
 ### Wiring Diagram (Arduino)
 
@@ -96,17 +96,17 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 >       GND
 > ```
 
-| 2.8"&nbsp;TFT | Arduino&nbsp;Nano | Remarks                          |
-| :------------ | :---------------- | :------------------------------- |
-| SDO (MISO)    | GPIO 12           | Serial&nbsp;Data&nbsp;Out        |
-| LED           | GPIO 7            | Backlight                        |
-| SCK           | GPIO 13           | Serial&nbsp;Clock                |
-| SDI (MOSI)    | GPIO 11           | Serial&nbsp;Data&nbsp;In         |
-| DC            | GPIO 9            | Data&nbsp;Control                |
-| RESET         | GPIO 8            | Reset                            |
-| CS            | GPIO 10           | Chip&nbsp;Select                 |
-| GND           | GND               | Ground                           |
-| VCC           | **3V3**           | **Do&nbsp;NOT&nbsp;use&nbsp;5V** |
+| 2.8"&nbsp;TFT   | Arduino&nbsp;Nano | Remarks                          |
+| :-------------- | :---------------- | :------------------------------- |
+| SDO&nbsp;(MISO) | GPIO 12           | Serial&nbsp;Data&nbsp;Out        |
+| LED             | GPIO 7            | Backlight                        |
+| SCK             | GPIO 13           | Serial&nbsp;Clock                |
+| SDI&nbsp;(MOSI) | GPIO 11           | Serial&nbsp;Data&nbsp;In         |
+| DC              | GPIO 9            | Data&nbsp;Control                |
+| RESET           | GPIO 8            | Reset                            |
+| CS              | GPIO 10           | Chip&nbsp;Select                 |
+| GND             | GND               | Ground                           |
+| VCC             | **3V3**           | **Do&nbsp;NOT&nbsp;use&nbsp;5V** |
 
 ## 3.5 inch TFT display shield
 
@@ -122,24 +122,24 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 > [!CAUTION]
 > These TFT display shields are only compatible with Arduino **Uno**, **Nano**, and **Mega**.
 
-| 3.5"&nbsp;TFT | Arduino&nbsp;Nano/Mega | Remarks                        |
-| :------------ | :--------------------- | :----------------------------- |
-| RESET         | RST                    | Reset                          |
-| LCD_RST       | A4                     | LCD&nbsp;Reset                 |
-| LCD_CS        | A3                     | Chip&nbsp;Select               |
-| LCD_RS        | A2                     | Data&nbsp;Select&nbsp;Signal   |
-| LCD_WR        | A1                     | Data&nbsp;Write&nbsp;Signal    |
-| LCD_RD        | A0                     | Data&nbsp;Read&nbsp;Signal     |
-| LCD_D0        | GPIO&nbsp;8            | 8bit&nbsp;Data&nbsp;Bit&nbsp;0 |
-| LCD_D1        | GPIO&nbsp;9            | 8bit&nbsp;Data&nbsp;Bit&nbsp;1 |
-| LCD_D2        | GPIO&nbsp;2            | 8bit&nbsp;Data&nbsp;Bit&nbsp;2 |
-| LCD_D3        | GPIO&nbsp;3            | 8bit&nbsp;Data&nbsp;Bit&nbsp;3 |
-| LCD_D4        | GPIO&nbsp;4            | 8bit&nbsp;Data&nbsp;Bit&nbsp;4 |
-| LCD_D5        | GPIO&nbsp;5            | 8bit&nbsp;Data&nbsp;Bit&nbsp;5 |
-| LCD_D6        | GPIO&nbsp;6            | 8bit&nbsp;Data&nbsp;Bit&nbsp;6 |
-| LCD_D7        | GPIO&nbsp;7            | 8bit&nbsp;Data&nbsp;Bit&nbsp;7 |
-| GND           | GND                    | Ground                         |
-| VCC           | **5V**                 | Can use **5V** or **3V3**      |
+| 3.5"&nbsp;TFT | Arduino&nbsp;Nano/Mega | Remarks                                       |
+| :------------ | :--------------------- | :-------------------------------------------- |
+| RESET         | RST                    | Reset                                         |
+| LCD_RST       | A4                     | LCD&nbsp;Reset                                |
+| LCD_CS        | A3                     | Chip&nbsp;Select                              |
+| LCD_RS        | A2                     | Data&nbsp;Select&nbsp;Signal                  |
+| LCD_WR        | A1                     | Data&nbsp;Write&nbsp;Signal                   |
+| LCD_RD        | A0                     | Data&nbsp;Read&nbsp;Signal                    |
+| LCD_D0        | GPIO&nbsp;8            | 8bit&nbsp;Data&nbsp;Bit&nbsp;0                |
+| LCD_D1        | GPIO&nbsp;9            | 8bit&nbsp;Data&nbsp;Bit&nbsp;1                |
+| LCD_D2        | GPIO&nbsp;2            | 8bit&nbsp;Data&nbsp;Bit&nbsp;2                |
+| LCD_D3        | GPIO&nbsp;3            | 8bit&nbsp;Data&nbsp;Bit&nbsp;3                |
+| LCD_D4        | GPIO&nbsp;4            | 8bit&nbsp;Data&nbsp;Bit&nbsp;4                |
+| LCD_D5        | GPIO&nbsp;5            | 8bit&nbsp;Data&nbsp;Bit&nbsp;5                |
+| LCD_D6        | GPIO&nbsp;6            | 8bit&nbsp;Data&nbsp;Bit&nbsp;6                |
+| LCD_D7        | GPIO&nbsp;7            | 8bit&nbsp;Data&nbsp;Bit&nbsp;7                |
+| GND           | GND                    | Ground                                        |
+| VCC           | **5V**                 | Can&nbsp;use&nbsp;**5V**&nbsp;or&nbsp;**3V3** |
 
 ## 3.5 inch TFT display breakout board
 
@@ -186,17 +186,17 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 > #define SPI_TOUCH_FREQUENCY 2500000
 > ```
 
-| 3.5"&nbsp;TFT | ESP32&nbsp;Dev&nbsp;Module | Remarks                          |
-| :------------ | :------------------------- | :------------------------------- |
-| SDO (MISO)    | GPIO 19                    | Serial&nbsp;Data&nbsp;Out        |
-| LED           | GPIO 5                     | Backlight                        |
-| SCK           | GPIO 18                    | Serial&nbsp;Clock                |
-| SDI (MOSI)    | GPIO 23                    | Serial&nbsp;Data&nbsp;In         |
-| DC            | GPIO 2                     | Data&nbsp;Control                |
-| RESET         | GPIO 4                     | Reset                            |
-| CS            | GPIO 15                    | Chip&nbsp;Select                 |
-| GND           | GND                        | Ground                           |
-| VCC           | **3V3**                    | **Do&nbsp;NOT&nbsp;use&nbsp;5V** |
+| 3.5"&nbsp;TFT   | ESP32&nbsp;Dev&nbsp;Module | Remarks                          |
+| :-------------- | :------------------------- | :------------------------------- |
+| SDO&nbsp;(MISO) | GPIO 19                    | Serial&nbsp;Data&nbsp;Out        |
+| LED             | GPIO 5                     | Backlight                        |
+| SCK             | GPIO 18                    | Serial&nbsp;Clock                |
+| SDI&nbsp;(MOSI) | GPIO 23                    | Serial&nbsp;Data&nbsp;In         |
+| DC              | GPIO 2                     | Data&nbsp;Control                |
+| RESET           | GPIO 4                     | Reset                            |
+| CS              | GPIO 15                    | Chip&nbsp;Select                 |
+| GND             | GND                        | Ground                           |
+| VCC             | **3V3**                    | **Do&nbsp;NOT&nbsp;use&nbsp;5V** |
 
 ### Wiring Diagram (Arduino)
 
@@ -215,14 +215,14 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 >       GND
 > ```
 
-| 3.5"&nbsp;TFT | Arduino&nbsp;Nano | Remarks                   |
-| :------------ | :---------------- | :------------------------ |
-| SDO (MISO)    | GPIO 12           | Serial&nbsp;Data&nbsp;Out |
-| LED           | GPIO 7            | Backlight                 |
-| SCK           | GPIO 13           | Serial&nbsp;Clock         |
-| SDI (MOSI)    | GPIO 11           | Serial&nbsp;Data&nbsp;In  |
-| DC            | GPIO 9            | Data&nbsp;Control         |
-| RESET         | GPIO 8            | Reset                     |
-| CS            | GPIO 10           | Chip&nbsp;Select          |
-| GND           | GND               | Ground                    |
-| VCC           | **5V**            | Can use **5V** or **3V3** |
+| 3.5"&nbsp;TFT   | Arduino&nbsp;Nano | Remarks                                       |
+| :-------------- | :---------------- | :-------------------------------------------- |
+| SDO&nbsp;(MISO) | GPIO 12           | Serial&nbsp;Data&nbsp;Out                     |
+| LED             | GPIO 7            | Backlight                                     |
+| SCK             | GPIO 13           | Serial&nbsp;Clock                             |
+| SDI&nbsp;(MOSI) | GPIO 11           | Serial&nbsp;Data&nbsp;In                      |
+| DC              | GPIO 9            | Data&nbsp;Control                             |
+| RESET           | GPIO 8            | Reset                                         |
+| CS              | GPIO 10           | Chip&nbsp;Select                              |
+| GND             | GND               | Ground                                        |
+| VCC             | **5V**            | Can&nbsp;use&nbsp;**5V**&nbsp;or&nbsp;**3V3** |
