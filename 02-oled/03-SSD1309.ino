@@ -7,18 +7,31 @@
 // === 2.42 Inch OLED 128×64 ===
 /* === I2C ===
  * OLED      Arduino Nano
- * RES   --> 7
+ * RES   --> GPIO 7
  * SDA   --> A4
  * SCL   --> A5
  * VCC   --> 5V
  * GND   --> GND
+ *
+ * OLED      ESP32
+ * RES   --> GPIO 5
+ * SDA   --> GPIO 21
+ * SCL   --> GPIO 22
+ * VCC   --> 5V
+ * GND   --> GND
  */
+
+#ifdef ARDUINO_ESP32_DEV
+#define OLED_RST 5
+#else
+#define OLED_RST 7
+#endif
 
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
 #define SCREEN_DELAY 250
 #define SCREEN_ADDRESS 0x3C
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, 7);
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RST);
 
 void clearDisplay()
 {
