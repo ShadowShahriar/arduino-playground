@@ -17,13 +17,21 @@
  * VCC   --> 5V
  */
 
+#ifdef ARDUINO_ESP32_DEV
+#define TFT_BL 5  // === backlight pin ===
+#define TFT_DC 2  // === data/command pin ===
+#define TFT_RST 4 // === reset pin ===
+#define TFT_CS 15 // === chip select pin ===
+#else
+#define TFT_BL 7  // === backlight pin ===
+#define TFT_DC 9  // === data/command pin ===
+#define TFT_RST 8 // === reset pin ===
+#define TFT_CS 10 // === chip select pin ===
+#endif
+
 #define LANDSCAPE false
 #define FLIP false
 #define BRIGHTNESS 255 // === [0, 255] ===
-#define TFT_BL 5	   // === backlight pin ===
-#define TFT_DC 2	   // === data/command pin ===
-#define TFT_RST 4	   // === reset pin ===
-#define TFT_CS 15	   // === chip select pin ===
 #define TFT_MS 250	   // === delay before initializing the display ===
 Adafruit_ST7789 tft = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_RST);
 
