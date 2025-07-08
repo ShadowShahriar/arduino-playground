@@ -32,6 +32,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 
 ## 1.8 inch TFT display module
 
+<img src="../images/tft-1.8inch.jpg" alt="1.8 inch TFT display module" width="500"/>
+
 > [!NOTE]
 > This TFT display module requires the [**Adafruit ST7735 and ST7789**](https://github.com/adafruit/Adafruit-ST7735-Library) library.
 
@@ -53,6 +55,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 | VCC           | **3V3**                    | **Do&nbsp;NOT&nbsp;use&nbsp;5V** |
 
 ## 2.8 inch TFT display module
+
+<img src="../images/tft-2.8inch.jpg" alt="2.8 inch TFT display module" width="500"/>
 
 > [!NOTE]
 > This TFT display module requires the [**Adafruit ST7735 and ST7789**](https://github.com/adafruit/Adafruit-ST7735-Library) library.
@@ -110,6 +114,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 
 ## 3.5 inch TFT display shield
 
+<img src="../images/tft-3.5inch-shield.jpg" alt="3.5 inch TFT display shield" width="500"/>
+
 > [!NOTE]
 > This TFT display shield requires the [**MCUFRIEND_kbv**](https://github.com/prenticedavid/MCUFRIEND_kbv) library.
 
@@ -142,6 +148,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 | VCC           | **5V**                 | Can&nbsp;use&nbsp;**5V**&nbsp;or&nbsp;**3V3** |
 
 ## 3.5 inch TFT display breakout board
+
+<img src="../images/tft-3.5inch-touch.jpg" alt="3.5 inch TFT display breakout board" width="500"/>
 
 > [!NOTE]
 > To use this TFT display module with an ESP32, we need the [**tft_eSPI**](https://github.com/Bodmer/TFT_eSPI) library. To use this module with an Arduino Nano, we need this [**ILI9488**](https://github.com/jaretburkett/ILI9488) library.
