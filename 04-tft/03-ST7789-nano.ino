@@ -5,7 +5,7 @@
 
 // === 2.8 Inch TFT 240×320 ===
 /* === SPI ===
- * TFT       ESP32
+ * TFT       Arduino Nano
  * LED   --> GPIO 7
  * SCK   --> GPIO 13
  * MISO  --> GPIO 12
