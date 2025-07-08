@@ -37,6 +37,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 
 [📄 **01-ST7735.ino**](./01-ST7735.ino)
 
+[📌 **Purchase Link (RoboticsBD)**](https://store.roboticsbd.com/display/699-tft-lcd-display-module-st7735s-128x160-robotics-bangladesh.html)
+
 ### Wiring Diagram (ESP32)
 
 | 1.8"&nbsp;TFT | ESP32&nbsp;Dev&nbsp;Module | Remarks                          |
@@ -58,6 +60,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 [📄 **03-ST7789.ino** (for ESP32)](./03-ST7789.ino)
 
 [📄 **03-ST7789-nano.ino** (for Arduino Nano)](./03-ST7789-nano.ino)
+
+[📌 **Purchase Link (RoboticsBD)**](https://store.roboticsbd.com/display/2465-tft-lcd-28-240320-rgb-spi-display-with-touchscreen-robotics-bangladesh.html)
 
 ### Wiring Diagram (ESP32)
 
@@ -111,6 +115,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 
 [📄 **02-ILI9481.ino**](./02-ILI9481.ino)
 
+[📌 **Purchase Link (RoboticsBD)**](https://store.roboticsbd.com/arduino-shield/1219-35inch-lcd-shield-for-arduino-robotics-bangladesh.html)
+
 ### Wiring Diagram (Arduino Nano/Mega)
 
 > [!CAUTION]
@@ -143,6 +149,8 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 [📄 **04-ILI9488.ino** (for ESP32 Dev Module)](./04-ILI9488.ino)
 
 [📄 **04-ILI9488-nano.ino** (for Arduino Nano)](./04-ILI9488-nano.ino)
+
+[📌 **Purchase Link (TechshopBD)**](https://techshopbd.com/product/tft-lcd-display-module-35-inch-with-touch)
 
 ### Wiring Diagram (ESP32)
 
