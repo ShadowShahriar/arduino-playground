@@ -81,9 +81,13 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 | GND             | GND                        | Ground                           |
 | VCC             | **3V3**                    | **Do&nbsp;NOT&nbsp;use&nbsp;5V** |
 
-### Wiring Diagram (Arduino)
+### Wiring Diagram (Arduino Nano)
 
 ![Wiring diagram for Arduino Nano](../images/tft-2.8-inch-wiring-diagram-nano.jpg)
+
+### Wiring Diagram (Arduino Mega Pro Mini)
+
+![Wiring diagram for Arduino Mega Pro Mini](../images/tft-2.8-inch-wiring-diagram-mega-pro.jpg)
 
 > [!CAUTION]
 > The TFT display module operates at a logic level of **3.3V**, while the Arduino Nano functions at a **5V** logic level. To ensure compatibility, we need to add a **voltage divider for all signal wires** to shift the logic level from **5V** to **3.3V**.
@@ -98,17 +102,17 @@ We are using the [**Adafruit GFX library**](https://github.com/adafruit/Adafruit
 >       GND
 > ```
 
-| 2.8"&nbsp;TFT   | Arduino&nbsp;Nano | Remarks                          |
-| :-------------- | :---------------- | :------------------------------- |
-| SDO&nbsp;(MISO) | GPIO 12           | Serial&nbsp;Data&nbsp;Out        |
-| LED             | GPIO 7            | Backlight                        |
-| SCK             | GPIO 13           | Serial&nbsp;Clock                |
-| SDI&nbsp;(MOSI) | GPIO 11           | Serial&nbsp;Data&nbsp;In         |
-| DC              | GPIO 9            | Data&nbsp;Control                |
-| RESET           | GPIO 8            | Reset                            |
-| CS              | GPIO 10           | Chip&nbsp;Select                 |
-| GND             | GND               | Ground                           |
-| VCC             | **3V3**           | **Do&nbsp;NOT&nbsp;use&nbsp;5V** |
+| 2.8"&nbsp;TFT   | Arduino&nbsp;Nano | Arduino&nbsp;Mega&nbsp;Pro&nbsp;Mini | Remarks                          |
+| :-------------- | :---------------- | :----------------------------------- | :------------------------------- |
+| SDO&nbsp;(MISO) | **GPIO 12**       | **GPIO 50**                          | Serial&nbsp;Data&nbsp;Out        |
+| LED             | GPIO 7            | GPIO 7                               | Backlight                        |
+| SCK             | **GPIO 13**       | **GPIO 52**                          | Serial&nbsp;Clock                |
+| SDI&nbsp;(MOSI) | **GPIO 11**       | **GPIO 51**                          | Serial&nbsp;Data&nbsp;In         |
+| DC              | GPIO 9            | GPIO 9                               | Data&nbsp;Control                |
+| RESET           | GPIO 8            | GPIO 8                               | Reset                            |
+| CS              | **GPIO 10**       | **GPIO 53**                          | Chip&nbsp;Select                 |
+| GND             | GND               | GND                                  | Ground                           |
+| VCC             | **3V3**           | **3V3**                              | **Do&nbsp;NOT&nbsp;use&nbsp;5V** |
 
 ## 3.5 inch TFT display shield
 
