@@ -61,7 +61,7 @@ Membrane Keypads are available in **1×4**, **3×4**, and **4×4** key configura
 
 Here we use an I2C expansion module [**(PCF8574)**](https://store.roboticsbd.com/electronics-module/2727-pcf8574-i2c-io-expansion-module-robotics-bangladesh.html) to use the keypad using only two pins (**SDA**, **SCL**).
 
-[📄 **02-keypad-i2c.ino**](./01-keypad-i2c.ino)
+[📄 **02-keypad-i2c.ino**](./02-keypad-i2c.ino)
 
 ### Wiring Diagram (Arduino)
 
