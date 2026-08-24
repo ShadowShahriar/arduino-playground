@@ -1,7 +1,7 @@
 #include <Wire.h>
 #include <I2CKeyPad.h>
 
-const uint8_t KEYPAD_ADDRESS = 0x20;
+const uint8_t KEYPAD_ADDRESS = 0x25;
 I2CKeyPad keypad(KEYPAD_ADDRESS);
 
 char keymap[16] = {
@@ -39,7 +39,7 @@ void loop()
 		if ((currentTime - lastKeyPressTime >= debounceDelay) && keyReleased)
 		{
 			uint8_t index = keypad.getKey();
-			char key = keymap[index];
+			char key = keymap[15 - index];
 			Serial.println(key);
 			lastKeyPressTime = currentTime;
 			keyReleased = false;
