@@ -1,5 +1,5 @@
 /*
- * === AdvancedInterval.h ===
+ * === AdvancedInterval.cpp ===
  * @version 0.0.1
  * @author S. Shahriar
  * @date 2026-08-26

@@ -60,5 +60,4 @@ public:
 	bool isComplete();
 	int getRunCount();
 };
-
 #endif
