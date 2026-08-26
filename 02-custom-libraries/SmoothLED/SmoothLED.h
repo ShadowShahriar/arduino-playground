@@ -15,6 +15,34 @@
 class SmoothLED
 {
 public:
+	enum Preset
+	{
+		ALIVE,
+		PROCESSING,
+		WARNING,
+		ERROR,
+		SUCCESS,
+		POWERDOWN,
+		AMBIENT,
+		POWERUP,
+		CHOKE,
+		PULSEIN,
+		PULSEOUT,
+		SLOWPULSE,
+		RAPIDPULSE,
+		DEEPBREATHE,
+		GLOW,
+		METEOR,
+		STRONGLIGHTNING,
+		FASTLIGHTNING,
+		SUNSET,
+		SUNRISE,
+		NOTIFY,
+		LOADING,
+		THINKING,
+		HEARTBEAT
+	};
+
 	enum Effect
 	{
 		FADE_IN_OUT,
@@ -118,5 +146,6 @@ public:
 	void on();
 	void off();
 	bool isRunning() const;
+	void playPreset(Preset preset);
 };
 #endif

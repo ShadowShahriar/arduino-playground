@@ -336,3 +336,55 @@ float SmoothLED::applyEasing(float progress, Easing easing)
 		return progress;
 	}
 }
+
+void SmoothLED::playPreset(Preset preset)
+{
+	if (preset == ALIVE)
+		start(SmoothLED::BREATHING, 3000, 700, 0, true, 1, SmoothLED::SINE, SmoothLED::EASE_OUT);
+	else if (preset == PROCESSING)
+		start(SmoothLED::PULSE, 1200, 1200, 0, true, 1, SmoothLED::SINE, SmoothLED::SINE);
+	else if (preset == WARNING)
+		start(SmoothLED::FADE_IN_OUT, 100, 100, 100, false, 3, SmoothLED::EASE_OUT, SmoothLED::EASE_IN);
+	else if (preset == ERROR)
+		start(SmoothLED::FADE_IN_OUT, 40, 40, 50, false, 5, SmoothLED::LINEAR, SmoothLED::LINEAR);
+	else if (preset == SUCCESS)
+		start(SmoothLED::FADE_IN_OUT, 400, 1200, 200, false, 1, SmoothLED::SINE, SmoothLED::SINE);
+	else if (preset == POWERDOWN)
+		start(SmoothLED::ON_THEN_FADE_OUT, 0, 3000, 1000, false, 1, SmoothLED::LINEAR, SmoothLED::SINE);
+	else if (preset == AMBIENT)
+		start(SmoothLED::BREATHING, 7000, 1500, 0, true, 1, SmoothLED::SINE, SmoothLED::SINE);
+	else if (preset == POWERUP)
+		start(SmoothLED::ON_THEN_FADE_OUT, 0, 2000, 3000, false, 1, SmoothLED::LINEAR, SmoothLED::SINE);
+	else if (preset == CHOKE)
+		start(SmoothLED::BREATHING, 5000, 250, 0, true, 1, SmoothLED::SINE, SmoothLED::EASE_IN);
+	else if (preset == PULSEIN)
+		start(SmoothLED::PULSE, 300, 1500, 0, true, 1, SmoothLED::EASE_OUT, SmoothLED::EASE_IN);
+	else if (preset == PULSEOUT)
+		start(SmoothLED::PULSE, 1500, 300, 0, true, 1, SmoothLED::EASE_IN, SmoothLED::EASE_OUT);
+	else if (preset == SLOWPULSE)
+		start(SmoothLED::PULSE, 2000, 2000, 0, true, 1, SmoothLED::SINE, SmoothLED::SINE);
+	else if (preset == RAPIDPULSE)
+		start(SmoothLED::PULSE, 100, 100, 0, true, 1, SmoothLED::EASE_IN_OUT, SmoothLED::EASE_IN_OUT);
+	else if (preset == DEEPBREATHE)
+		start(SmoothLED::BREATHING, 10000, 2500, 0, true, 1, SmoothLED::SINE, SmoothLED::SINE);
+	else if (preset == GLOW)
+		start(SmoothLED::BREATHING, 6000, 2000, 0, true, 1, SmoothLED::SINE, SmoothLED::SINE);
+	else if (preset == METEOR)
+		start(SmoothLED::FADE_IN_OUT, 50, 500, 0, false, 1, SmoothLED::EASE_OUT, SmoothLED::EASE_IN);
+	else if (preset == STRONGLIGHTNING)
+		start(SmoothLED::FADE_IN_OUT, 5, 150, 5, false, 1, SmoothLED::LINEAR, SmoothLED::EASE_IN);
+	else if (preset == FASTLIGHTNING)
+		start(SmoothLED::FADE_IN_OUT, 20, 100, 20, false, 1, SmoothLED::EASE_OUT, SmoothLED::EASE_IN);
+	else if (preset == SUNSET)
+		start(SmoothLED::ON_THEN_FADE_OUT, 0, 8000, 0, false, 1, SmoothLED::LINEAR, SmoothLED::SINE);
+	else if (preset == SUNRISE)
+		start(SmoothLED::FADE_IN_THEN_OFF, 8000, 0, 0, false, 1, SmoothLED::SINE, SmoothLED::LINEAR);
+	else if (preset == NOTIFY)
+		start(SmoothLED::FADE_IN_OUT, 100, 800, 0, false, 1, SmoothLED::EASE_OUT, SmoothLED::EASE_IN);
+	else if (preset == THINKING)
+		start(SmoothLED::PULSE, 1000, 1000, 0, true, 1, SmoothLED::SINE, SmoothLED::SINE);
+	else if (preset == LOADING)
+		start(SmoothLED::PULSE, 500, 500, 0, true, 1, SmoothLED::EASE_IN_OUT, SmoothLED::EASE_IN_OUT);
+	else if (preset == HEARTBEAT)
+		start(SmoothLED::FADE_IN_OUT, 120, 250, 150, false, 3, SmoothLED::EASE_OUT, SmoothLED::EASE_IN);
+}
