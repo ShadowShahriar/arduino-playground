@@ -13,6 +13,7 @@ SmoothLED led(3);
 
 void setup()
 {
+	led.begin();
 	led.play();
 }
 

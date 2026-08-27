@@ -272,6 +272,9 @@ bool SmoothLED::isRunning() const
 
 void SmoothLED::setOutput(uint8_t brightness)
 {
+	if (brightness == _brightness)
+		return;
+
 	_brightness = brightness;
 	analogWrite(_pin, _brightness);
 }
