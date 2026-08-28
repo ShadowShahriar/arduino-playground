@@ -98,6 +98,45 @@ void loop()
 }
 ```
 
+## Fade
+
+```cpp
+#include <SmoothLED.h>
+
+SmoothLED led(2);
+
+void setup()
+{
+	Serial.begin(9600);
+	led.playPreset(SmoothLED::ALIVE);
+}
+
+void loop()
+{
+	led.update();
+
+	if (Serial.available() > 0)
+	{
+		char command = Serial.read();
+		if (command == 'p')
+		{
+			led.playPreset(SmoothLED::ALIVE);
+			Serial.println(F("Playing preset."));
+		}
+		if (command == 'i')
+		{
+			led.fadeIn(1000);
+			Serial.println(F("Fading in."));
+		}
+		if (command == 'o')
+		{
+			led.fadeOut(1000);
+			Serial.println(F("Fading out."));
+		}
+	}
+}
+```
+
 ## Presets
 
 ```cpp

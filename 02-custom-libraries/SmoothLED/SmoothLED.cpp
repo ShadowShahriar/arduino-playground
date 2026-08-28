@@ -25,7 +25,8 @@ SmoothLED::SmoothLED(uint8_t pin)
 	  _fadeInEasing(EASE_IN_OUT),
 	  _fadeOutEasing(EASE_IN_OUT),
 	  _onCycle(nullptr),
-	  _onComplete(nullptr)
+	  _onComplete(nullptr),
+	  _customStartBrightness(0)
 {
 }
 
@@ -108,6 +109,36 @@ void SmoothLED::update()
 			setOutput(0);
 			completeCycle(now);
 		}
+		break;
+	}
+
+	case FADE_IN_FROM_CURRENT:
+	{
+		unsigned long elapsed = now - _stateStart;
+		if (elapsed >= _fadeInTime)
+		{
+			setOutput(255);
+			_state = IDLE;
+			break;
+		}
+
+		uint8_t brightness = _customStartBrightness + ((uint32_t)(255 - _customStartBrightness) * elapsed) / _fadeInTime;
+		setOutput(brightness);
+		break;
+	}
+
+	case FADE_OUT_FROM_CURRENT:
+	{
+		unsigned long elapsed = now - _stateStart;
+		if (elapsed >= _fadeOutTime)
+		{
+			setOutput(0);
+			_state = IDLE;
+			break;
+		}
+
+		uint8_t brightness = _customStartBrightness - ((uint32_t)_customStartBrightness * elapsed) / _fadeOutTime;
+		setOutput(brightness);
 		break;
 	}
 
@@ -390,4 +421,38 @@ void SmoothLED::playPreset(Preset preset)
 		start(SmoothLED::PULSE, 500, 500, 0, true, 1, SmoothLED::EASE_IN_OUT, SmoothLED::EASE_IN_OUT);
 	else if (preset == HEARTBEAT)
 		start(SmoothLED::FADE_IN_OUT, 120, 250, 150, false, 3, SmoothLED::EASE_OUT, SmoothLED::EASE_IN);
+}
+
+void SmoothLED::fadeIn(unsigned long duration)
+{
+	_customStartBrightness = _brightness;
+
+	_fadeInTime = duration;
+	_stateStart = millis();
+
+	if (duration == 0 || _brightness >= 255)
+	{
+		setOutput(255);
+		_state = IDLE;
+		return;
+	}
+
+	_state = FADE_IN_FROM_CURRENT;
+}
+
+void SmoothLED::fadeOut(unsigned long duration)
+{
+	_customStartBrightness = _brightness;
+
+	_fadeOutTime = duration;
+	_stateStart = millis();
+
+	if (duration == 0 || _brightness == 0)
+	{
+		setOutput(0);
+		_state = IDLE;
+		return;
+	}
+
+	_state = FADE_OUT_FROM_CURRENT;
 }

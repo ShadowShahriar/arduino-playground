@@ -75,7 +75,9 @@ private:
 		IDLE,
 		FADING_IN,
 		HOLDING,
-		FADING_OUT
+		FADING_OUT,
+		FADE_IN_FROM_CURRENT,
+		FADE_OUT_FROM_CURRENT
 	};
 
 	uint8_t _pin;
@@ -97,6 +99,7 @@ private:
 
 	Callback _onCycle;
 	Callback _onComplete;
+	uint8_t _customStartBrightness;
 
 	void setOutput(uint8_t brightness);
 
@@ -142,6 +145,8 @@ public:
 		Easing fadeInEasing,
 		Easing fadeOutEasing);
 	void playOut(int loop, unsigned long holdTime, unsigned long fadeInTime);
+	void fadeIn(unsigned long duration);
+	void fadeOut(unsigned long duration);
 	void stop();
 	void on();
 	void off();
