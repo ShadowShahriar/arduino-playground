@@ -10,23 +10,22 @@
 #include "SmoothLED.h"
 #include <math.h>
 
-SmoothLED::SmoothLED(uint8_t pin)
-	: _pin(pin),
-	  _brightness(0),
-	  _effect(FADE_IN_OUT),
-	  _state(IDLE),
-	  _fadeInTime(1000),
-	  _fadeOutTime(1000),
-	  _holdTime(0),
-	  _stateStart(0),
-	  _infinite(false),
-	  _repeatCount(1),
-	  _completedCycles(0),
-	  _fadeInEasing(EASE_IN_OUT),
-	  _fadeOutEasing(EASE_IN_OUT),
-	  _onCycle(nullptr),
-	  _onComplete(nullptr),
-	  _customStartBrightness(0)
+SmoothLED::SmoothLED(uint8_t pin) : _pin(pin),
+									_brightness(0),
+									_effect(FADE_IN_OUT),
+									_state(IDLE),
+									_fadeInTime(1000),
+									_fadeOutTime(1000),
+									_holdTime(0),
+									_stateStart(0),
+									_infinite(false),
+									_repeatCount(1),
+									_completedCycles(0),
+									_fadeInEasing(EASE_IN_OUT),
+									_fadeOutEasing(EASE_IN_OUT),
+									_onCycle(nullptr),
+									_onComplete(nullptr),
+									_customStartBrightness(0)
 {
 }
 
@@ -455,4 +454,24 @@ void SmoothLED::fadeOut(unsigned long duration)
 	}
 
 	_state = FADE_OUT_FROM_CURRENT;
+}
+
+void SmoothLED::setStatus(Status status)
+{
+	if (status == ON)
+		on();
+	else if (status == OFF)
+		off();
+	else
+		return;
+}
+
+void SmoothLED::setStatus(Status status, unsigned long duration)
+{
+	if (status == FADE_IN)
+		fadeIn(duration);
+	else if (status == FADE_OUT)
+		fadeOut(duration);
+	else
+		return;
 }

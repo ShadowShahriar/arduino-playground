@@ -67,6 +67,15 @@ public:
 		ON_COMPLETE
 	};
 
+	enum Status
+	{
+		ON,
+		OFF,
+		FADE_IN,
+		FADE_OUT,
+		NONE
+	};
+
 	typedef void (*Callback)();
 
 private:
@@ -152,5 +161,7 @@ public:
 	void off();
 	bool isRunning() const;
 	void playPreset(Preset preset);
+	void setStatus(Status status);
+	void setStatus(Status status, unsigned long duration);
 };
 #endif
